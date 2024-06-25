@@ -1,0 +1,21 @@
+[package]
+name = "esp-idf-bindgen"
+version = "0.1.1"
+edition = "2021"
+description = "ESP IDF (Espressif IoT Development Framework)"
+license = "MIT OR Apache-2.0"
+exclude = ["/.github/*"]
+
+[dependencies]
+libc = { version = "0.2", default-features = false }
+
+[profile.release]
+opt-level = "s"
+
+[profile.dev]
+debug = true # Symbols are nice and they don't increase the size on Flash
+opt-level = "z"
+
+[build-dependencies]
+bindgen = "0.57"
+globwalk = "0.8"
