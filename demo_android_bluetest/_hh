@@ -1,0 +1,4 @@
+"crypto": {
+		"from": ["dist", "crypto.js"],
+		"to": ["js", "res", "crypto.js"]
+	}

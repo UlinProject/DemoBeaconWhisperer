@@ -1,0 +1,6 @@
+{
+	"js-sha1": {
+		"from": ["src", "sha1.js"],
+		"to": ["js", "res", "sha1.js"]
+	}
+}

@@ -1,0 +1,37 @@
+{
+  "name": "io.cordova.hellocordova",
+  "displayName": "BluTest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "com.unarin.cordova.beacon": "github:petermetz/cordova-plugin-ibeacon",
+    "cordova-android": "^10.1.2",
+    "cordova-plugin-aes256-encryption": "^2.0.1",
+    "cordova-plugin-device": "^2.1.0",
+    "cordova-plugin-networking-bluetooth": "^1.0.3"
+  },
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {
+      "com.unarin.cordova.beacon": {},
+      "cordova-plugin-networking-bluetooth": {},
+      "cordova-plugin-aes256-encryption": {}
+    }
+  },
+  "dependencies": {
+    "cordova-import-npm": "^1.0.35",
+    "js-sha1": "^0.6.0",
+    "uuid": "^9.0.0"
+  }
+}
