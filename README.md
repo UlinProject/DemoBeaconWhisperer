@@ -46,3 +46,10 @@ This repository contains a prototype system for covert data transmission via Blu
 
 • demo_android_bluetest (Android, JS, Cordova)
 
+## License
+
+Copyright 2022-2023 #UlinProject Denis Kotlyarov (Денис Котляров)
+
+Licensed under the MIT License.
+
+<b>This project is provided as is without warranty of any kind.</b>
