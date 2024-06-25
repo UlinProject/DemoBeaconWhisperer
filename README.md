@@ -23,6 +23,23 @@ This repository contains a prototype system for covert data transmission via Blu
 
 • Android (DemoApp, Cordova, JS): A demo Android application, developed using Cordova and JavaScript, demonstrates the sending and receiving of hidden data.
 
+## Protocol Features:
+
+• Data Encoding: The UUID and ID fields of iBeacons are utilized to encode data. Partial UUIDs and ID omission are supported, offering flexibility in data representation.
+
+• Carousel Transmission: Beacons are transmitted in a carousel manner with a defined interval, ensuring reliable data delivery.
+
+• Complete Transmission: Transfer is considered successful only after all beacons have been received.
+
+• Bidirectional Communication: The system supports both data input and output. Upon successful transmission, the device simulates an iBeacon, allowing for bidirectional communication.
+
+• Flexible Data Size: Supports any number of data bytes, prioritizing data queue management.
+
+• Data Security: Data is compressed and encrypted for enhanced security.
+
+• Queue Management & Multi-Device Support: Implements robust queuing mechanisms to handle multiple data streams and allows for simultaneous data transmission and reception from multiple devices.
+
+
 ## Repository Structure
 
 • esp32 (Rust)
